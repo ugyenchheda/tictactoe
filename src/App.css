@@ -3,6 +3,7 @@ button {
   min-width: 25px;
   margin-top: 3px;
   margin-left: 3px;
+  vertical-align: top;
 }
 .game-board {
   width: 140px;
@@ -11,4 +12,7 @@ button {
 .game-info {
   /* width: 300px; */
   float: left;
+}
+.status {
+  margin-bottom: 10px;
 }
