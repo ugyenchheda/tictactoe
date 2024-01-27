@@ -1,0 +1,14 @@
+button {
+  min-height: 25px;
+  min-width: 25px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.game-board {
+  width: 140px;
+  float: left;
+}
+.game-info {
+  /* width: 300px; */
+  float: left;
+}
