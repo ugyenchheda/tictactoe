@@ -16,3 +16,33 @@ button {
 .status {
   margin-bottom: 10px;
 }
+.square.highlight {
+  background-color: yellow;
+}
+.square {
+  background: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.x-square {
+  color: blue; /* Set color for X */
+}
+
+.o-square {
+  color: red; /* Set color for O */
+}
+
+.highlight {
+  background-color: yellow;
+}
+li button {
+  background: #fff;
+  font-style: italic;
+  padding: 3px 12px;
+}
+li {
+  margin-bottom: 3px;
+}

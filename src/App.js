@@ -1,14 +1,27 @@
 import { useState } from 'react';
 import './App.css';
 
-// This component represents an individual square on the game board.
-function Square({ value, onSquareClick }) {
+// Inside the Square component
+function Square({ value, onSquareClick, highlight }) {
+  let squareClassName = "square";
+  
+  // Conditionally add class based on the value (X or O)
+  if (value === 'X') {
+    squareClassName += " x-square";
+  } else if (value === 'O') {
+    squareClassName += " o-square";
+  }
+
+  // Add highlight class if applicable
+  squareClassName += highlight ? ' highlight' : '';
+
   return (
-    <button className="square" onClick={onSquareClick}>
+    <button className={squareClassName} onClick={onSquareClick}>
       {value}
     </button>
   );
 }
+
 
 // This component represents the game board and handles user clicks on squares.
 function Board({ xIsNext, squares, onPlay }) {
@@ -87,7 +100,7 @@ export default function Game() {
     if (move > 0) {
       description = 'Go to move #' + move;
     } else {
-      description = 'Go to game start';
+      description = 'Start Game';
     }
     return (
       <li key={move}>
